@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+  <body>
+    <main class="main">
+      <!-- header -->
+      <div class="app-header">
+        <span>لیست تراکنش ها</span>
+        <div class="search-wrapper hidden">
+          <input
+            placeholder="جستجوی تراکنش"
+            type="number"
+            name=""
+            id="search"
+          />
+          <img src="./src/imgs/Search.svg" alt="" />
+        </div>
+      </div>
+      <!-- overlay -->
+      <div class="overlay hidden">
+        <img
+          src="./src/imgs/photo_2026-01-03_22-37-14.jpg"
+          class="my--image"
+          alt=""
+        />
+      </div>
+      <button class="btn" id="btn-calc">بارگذاری تراکنش ها</button>
+      <!-- content -->
+
+      <div class="content--section hidden">
+        <h3 class="transaction--title">لیست تراکنش های شما</h3>
+        <!-- table -->
+        <table class="transaction--table">
+          <thead>
+            <tr class="">
+              <th id="priceBtn" aria-selected="false" class="price">
+                <span>ردیف</span>
+                <div class="arrow" id="id-arrow" aria-selected="false">
+                  <img src="./src/imgs/arrow.svg" class="" alt="#" />
+                </div>
+              </th>
+              <th>نوع تراکنش</th>
+              <th id="priceBtn" aria-selected="false" class="price">
+                <span>مبلغ</span>
+                <div class="arrow" id="price-arrow" aria-selected="false">
+                  <img src="./src/imgs/arrow.svg" class="" alt="#" />
+                </div>
+              </th>
+              <th>شماره پیگیری</th>
+              <th class="date">
+                <span>تاریخ تراکنش</span>
+                <div class="arrow" id="date-arrow" aria-selected="false">
+                  <img src="./src/imgs/arrow.svg" class="" alt="#" />
+                </div>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody id="table-body">
+            <!-- <tr id="transaction">
+            <td id="transaction-id"></td>
+            <td id="transaction-type"></td>
+            <td id="transaction-price"></td>
+            <td id="transaction-refId"></td>
+            <td id="transaction-refId"></td>
+          </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
